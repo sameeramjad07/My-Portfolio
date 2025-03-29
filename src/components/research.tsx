@@ -23,6 +23,8 @@ export const Research = () => {
   const [selectedProject, setSelectedProject] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<'papers' | 'projects'>('papers');
   const detailsRef = useRef<HTMLDivElement>(null);
+  // Ensure useInView is called at the top level
+  const { ref: inViewRef, inView } = useInView();
 
   const institutionRefs = useRef<(HTMLElement | null)[]>([]);
 
@@ -53,6 +55,8 @@ export const Research = () => {
         });
       }, 300);
     }
+
+    return <div ref={inViewRef}>{/* Your component JSX */}</div>;
   };
 
   const handlePaperClick = (paperId: string) => {

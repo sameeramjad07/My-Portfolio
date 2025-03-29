@@ -20,6 +20,7 @@ module.exports = {
     'tailwindcss/no-custom-classname': 'off',
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
+    'simple-import-sort/imports': 'off',
     'simple-import-sort/imports': [
       2,
       {
