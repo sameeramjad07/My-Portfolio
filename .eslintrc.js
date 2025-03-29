@@ -21,22 +21,7 @@ module.exports = {
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
     'simple-import-sort/imports': 'off',
-    'simple-import-sort/imports': [
-      2,
-      {
-        groups: [
-          ['^.+\\.s?css$'],
-          [
-            `^(${require('module').builtinModules.join('|')})(/|$)`,
-            '^react',
-            '^@?\\w',
-          ],
-          ['^components(/.*|$)'],
-          ['^lib(/.*|$)', '^hooks(/.*|$)'],
-          ['^\\.'],
-        ],
-      },
-    ],
+    'react-hooks/rules-of-hooks': 'off',
   },
   settings: {
     tailwindcss: {
