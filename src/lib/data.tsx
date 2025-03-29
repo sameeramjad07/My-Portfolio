@@ -156,7 +156,7 @@ export const experiencesData = [
       <img
         src="/experience/sibot.webp"
         alt="HPC Lab"
-        className="size-12 object-cover w-full"
+        className="size-12 object-contain"
       />
     ),
     title: 'Research Assistant',
@@ -183,39 +183,84 @@ export const experiencesData = [
 
 export const researchData = [
   {
-    image: '/research/ai-business-finance.svg', // Placeholder: Replace with actual image
-    title: 'AI in Business and Finance: A Micro-to-Macro Perspective',
+    id: 1,
+    title: 'Information Processing and Transmission Lab',
+    role: 'FYDP Researcher',
+    location: 'SEECS, NUST Islamabad',
+    date: '2025 - Present',
     description:
-      'A systematic review of ML, DL, and NLP applications in Business and Finance over the last 5 years.',
-    role: 'Second Author',
-    publication: 'DOI: 10.14738/abr.1210.17781',
-    date: 'October 2024',
+      'Leading research in intersection of 6G communications and Large Language Models.',
+    papers: [],
+    projects: [],
   },
   {
-    image: '/projects/nextstarter.svg', // Placeholder: Replace with actual image
-    title: 'Deep Learning for Disease Detection',
+    id: 2,
+    title: 'Machine Vision and Intelligent Systems Lab',
+    role: 'Undergradute Researcher',
+    location: 'SEECS, NUST Islamabad',
+    date: '2024 - Present',
     description:
-      'A study using CNN models like ResNet50v2 on the NIH Chest X-ray Dataset for disease detection, achieving 73% AUC across 13 classes with Grad-CAMs for interpretability.',
-    technologies: ['Python', 'TensorFlow', 'ResNet50v2', 'Grad-CAM'],
-    links: {},
+      'Conducting research on the temporal analysis of glacier changes and monitoring their change maps using computer vision techniques.',
+    projects: [
+      {
+        id: 'proj1',
+        title: 'Temporal Analysis of Glacier Changes',
+        description:
+          'Conducting research on the temporal analysis of glacier changes and monitoring their change maps using computer vision techniques.',
+      },
+    ],
+    papers: [
+      {
+        id: 'p3',
+        title:
+          'AI in Business and Finance: A Micro-to-Macro Perspective on Its Impact',
+        journal: 'Archives of Business Research',
+        year: '2024',
+        abstract:
+          'This comprehensive survey examines the transformative impact of machine learning (ML), deep learning (DL), and natural language processing (NLP) across diverse business and finance sectors. From micro-level operational efficiencies to macro-level strategic decision-making, we delve into the multifaceted applications of AI and its influence on traditional practices. Our analysis highlights the increasing prominence of ML in enhancing decision-making and achieving greater accuracy and efficiency. We also identify key challenges such as data quality, modelinterpretability, and linguistic information processing. By addressing these challenges, we can further unlock the potential of ML in revolutionizing business and finance. We conducted a systematic literature review using the PRISMA technique to identify relevant research published within the last five years. Our findings reveal the growing adoption of ML techniques in various business and finance applications, such as fraud detection, risk assessment, customer relationship management, and algorithmic trading. We identified relevant publications through comprehensive searches in leading academic databases, including Scopus, Web of Science, and Google Scholar. We also discuss the challenges associated with implementing ML models in these domains, including data quality issues, model interpretability, and ethical considerations. Byunderstanding the applications, challenges, and opportunities associated with AI, businesses, policymakers, researchers, and investors can make informed decisions and leverage AI to drive innovation and growth in the business and finance sectors.',
+        authors: [
+          'A. Shehzadi',
+          'M. S. Amjad',
+          'M. N. Anwar',
+          'F. A. Satti',
+          'M. M. Fraz',
+        ],
+        tags: [
+          'Artificial Intelligence',
+          'Business',
+          'Finance',
+          'Accounting',
+          'Natural Language Processing',
+          'Algorithmic trading',
+          'Risk assessment',
+        ],
+        link: 'https://doi.org/10.14738/abr.1210.17781',
+      },
+    ],
   },
   {
-    image: '/research/llm-personalization.svg', // Placeholder: Replace with actual image
-    title: 'Personalization vs. Security: Challenges in Large Language Models',
+    id: 3,
+    title: 'High Performance Computing Lab',
+    role: 'Research Assistant',
+    location: 'SEECS, NUST Islamabad',
+    date: '2024 - 2025',
     description:
-      'Explored privacy risks in LLMs’ personalization, proposing strategies for balancing UX and security.',
-    role: 'Lead Author',
-    publication: 'NUST, Islamabad',
-    date: 'May 2024',
-  },
-  {
-    image: '/research/ai-singularity.svg', // Placeholder: Replace with actual image
-    title: 'AI Singularity - A White Paper',
-    description:
-      'Contributing to a white paper on AI singularity implications and strategic recommendations.',
-    role: 'Research Writer',
-    publication: 'In Progress',
-    date: 'July 2024 - Present',
+      'Focused on Large Language Models for autonomous systems and chatbot applications.',
+    projects: [
+      {
+        id: 'proj2',
+        title: 'Automated Live Booking System',
+        description:
+          'Developed an AI-driven live booking system utilizing NLP and LLMs for real-time customer interactions.',
+      },
+      {
+        id: 'proj3',
+        title: 'AI Lip-Syncing Model',
+        description:
+          'Designed and implemented an AI-based lip-syncing model integrating deep learning and natural language processing.',
+      },
+    ],
+    papers: [],
   },
 ] as const;
 
