@@ -2,7 +2,6 @@
   "name": "next-starter",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://sameeramjad07.github.io/My-Portfolio",
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
@@ -14,9 +13,7 @@
     "format:write": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache",
     "typecheck": "tsc --noEmit",
     "postbuild": "next-sitemap --config next-sitemap.config.js",
-    "prepare": "husky",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d out"
+    "prepare": "husky"
   },
   "husky": {
     "hooks": {
