@@ -4,7 +4,7 @@ This is my personal portfolio website! A showcase of my journey as a Computer Sc
 
 ## 📍 Live
 
-Link to the live version: [https://sameeramjad.vercel.app](https://sameeramjad.vercel.app) (buying custom domain soon😁)
+Link to the live version: [https://my-portfolio-pi-five-26.vercel.app/](https://my-portfolio-pi-five-26.vercel.app/) (buying custom domain soon😁)
 
 ## About
 
